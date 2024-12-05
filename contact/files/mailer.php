@@ -14,10 +14,10 @@ $email = "chrismckay@1kredhead.com";
 
 //array of fields in form. (In the format "field_name" => "field_label")
 $form_fields = array(
-"element0" => 'Your Name:',
-"element1" => 'Your Email:',
-"element2" => 'Subject:',
-"element3" => 'Message:'
+"element0" => 'Your name',
+"element1" => 'Your email',
+"element2" => 'Subject',
+"element3" => 'Message'
 );
 
 $required_fields = array("element0", "element1", "element2", "element3");
@@ -56,11 +56,7 @@ if ($_POST['comment']) {
 // PROCESS FORM FIELDS //
 /////////////////////////
 
-$magic_quotes = (bool) get_magic_quotes_gpc();
 foreach ($_POST['form'] as $key => $value) {
-	if ($magic_quotes) {
-		$value = stripslashes($value);
-	}
 	$_SESSION['form'][$key] = $value;
 }
 
@@ -260,7 +256,7 @@ function safe_escape_string($string) {
 
 // Function to check the validity of email address.
 function check_email($email) {
-	return (bool) preg_match('/^([a-z0-9_]|\-|\.)+@(([a-z0-9_]|\-)+\.)+[a-z]{2,4}$/i', $email);
+	return (bool) preg_match('/^([a-z0-9_]|\-|\.)+@(([a-z0-9_]|\-)+\.)+[a-z]{2,}$/i', $email);
 }
 
 // Function to check the required fields are filled in.

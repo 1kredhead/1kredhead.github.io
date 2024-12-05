@@ -2,14 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
 		<loc>http://www.1kredhead.com/index.html</loc>
+		<lastmod>2024-12-04</lastmod>
 	</url>
 	<url>
-		<loc>http://www.1kredhead.com/styled-2/reels.html</loc>
+		<loc>http://www.1kredhead.com/reels/reels.html</loc>
+		<lastmod>2024-12-04</lastmod>
 	</url>
 	<url>
-		<loc>http://www.1kredhead.com/contact-form/contact.php</loc>
+		<loc>http://www.1kredhead.com/equipment/equipment.html</loc>
+		<lastmod>2024-12-04</lastmod>
 	</url>
 	<url>
-		<loc>http://www.1kredhead.com/styled/equipment.html</loc>
+		<loc>http://www.1kredhead.com/contact/contact.php</loc>
+		<lastmod>2024-12-04</lastmod>
 	</url>
 </urlset>
